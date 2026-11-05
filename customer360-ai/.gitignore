@@ -1,0 +1,53 @@
+# --- Environment / secrets ---------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# --- Playwright ---------------------------------------------------------------
+# Traces and screenshots from failed runs, and the HTML report.
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/.cache/
+
+# --- ML artifacts --------------------------------------------------------------
+ml/models/**
+!ml/models/.gitkeep
+ml/runs/**
+backend/data/models/**
+
+# --- Data ---------------------------------------------------------------------
+data/uploads/**
+!data/uploads/.gitkeep
+backend/data/uploads/**
+data/sample/**/*.parquet
+*.csv.tmp
+*.db
+
+# --- Editor / OS ---------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---------------------------------------------------------------------
+*.log
+logs/

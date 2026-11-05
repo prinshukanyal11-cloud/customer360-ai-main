@@ -1,0 +1,55 @@
+# Core API
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.6.0
+email-validator==2.2.0
+gunicorn==23.0.0
+
+# Database
+sqlalchemy==2.0.35
+psycopg[binary]==3.2.3
+alembic==1.13.3
+
+# Data
+pandas==2.2.3
+numpy==1.26.4
+polars==1.9.0
+
+# Machine learning / analytics
+scikit-learn==1.5.2
+xgboost==2.1.1
+lightgbm==4.5.0
+shap==0.46.0
+
+# LLM provider abstraction
+openai==1.51.2
+google-genai==1.0.0
+
+# Auth & security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.0
+python-multipart==0.0.12
+
+# Async jobs
+celery==5.4.0
+redis==5.1.0
+
+# HTTP client (for testing + SDKs)
+httpx==0.27.2
+
+# Utility
+python-dotenv==1.0.1
+structlog==24.4.0
+tenacity==9.0.0
+orjson==3.10.10
+
+# Reports / exports
+# PDF is deliberately absent: the report catalogue advertises pdf_status
+# not_available. Add a renderer here in the same change that implements it.
+openpyxl==3.1.5
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0

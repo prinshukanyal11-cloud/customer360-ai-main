@@ -1,0 +1,501 @@
+customer_id,name,email,city,state,age,gender,signup_date,acquisition_channel
+CUST00001,Ananya Reddy,ananya.reddy1@example.com,Pune,Maharashtra,45,Female,2026-06-27,web
+CUST00002,Aarav Iyer,aarav.iyer2@example.com,Jaipur,Rajasthan,31,Female,2026-07-10,web
+CUST00003,Anjali Patel,anjali.patel3@example.com,Gurugram,Haryana,67,Female,2025-04-05,app
+CUST00004,Rahul Singh,rahul.singh4@example.com,Indore,Madhya Pradesh,23,Other,2026-06-23,app
+CUST00005,Saanvi Reddy,saanvi.reddy5@example.com,Jaipur,Rajasthan,64,Male,2024-04-02,web
+CUST00006,Aryan Joshi,aryan.joshi6@example.com,Chennai,Tamil Nadu,25,Female,2026-07-11,web
+CUST00007,Aryan Nair,aryan.nair7@example.com,Bengaluru,Karnataka,28,Male,2025-06-06,phone
+CUST00008,Kavya Joshi,kavya.joshi8@example.com,Gurugram,Haryana,39,Male,2026-06-16,web
+CUST00009,Aryan Nair,aryan.nair9@example.com,Kolkata,West Bengal,48,Female,2024-01-13,web
+CUST00010,Kavya Kapoor,kavya.kapoor10@example.com,Lucknow,Uttar Pradesh,57,Female,2026-02-27,web
+CUST00011,Vivaan Sharma,vivaan.sharma11@example.com,Jaipur,Rajasthan,34,Male,2024-07-03,app
+CUST00012,Rahul Agrawal,rahul.agrawal12@example.com,Delhi,Delhi,37,Female,2023-12-17,web
+CUST00013,Aarav Joshi,aarav.joshi13@example.com,Kochi,Kerala,65,Female,2025-08-31,app
+CUST00014,Meera Joshi,meera.joshi14@example.com,Pune,Maharashtra,22,Male,2025-10-19,web
+CUST00015,Nikhil Das,nikhil.das15@example.com,Bengaluru,Karnataka,31,Male,2025-05-08,web
+CUST00016,Kabir Gupta,kabir.gupta16@example.com,Gurugram,Haryana,33,Female,2024-06-09,app
+CUST00017,Nikhil Iyer,nikhil.iyer17@example.com,Ahmedabad,Gujarat,52,Female,2024-12-21,app
+CUST00018,Meera Kaur,meera.kaur18@example.com,Chandigarh,Punjab,51,Female,2025-04-20,app
+CUST00019,Saanvi Reddy,saanvi.reddy19@example.com,Kolkata,West Bengal,65,Female,2026-03-22,web
+CUST00020,Ananya Nair,ananya.nair20@example.com,Delhi,Delhi,33,Female,2025-10-15,web
+CUST00021,Anjali Das,anjali.das21@example.com,Lucknow,Uttar Pradesh,65,Male,2025-10-31,app
+CUST00022,Nikhil Reddy,nikhil.reddy22@example.com,Kolkata,West Bengal,70,Female,2025-02-27,store
+CUST00023,Nikhil Malhotra,nikhil.malhotra23@example.com,Jaipur,Rajasthan,27,Other,2023-12-29,web
+CUST00024,Aditya Reddy,aditya.reddy24@example.com,Kochi,Kerala,20,Male,2026-06-12,store
+CUST00025,Kabir Chopra,kabir.chopra25@example.com,Ahmedabad,Gujarat,18,Female,2025-09-05,web
+CUST00026,Rohan Patel,rohan.patel26@example.com,Kochi,Kerala,41,Male,2026-06-27,store
+CUST00027,Kabir Menon,kabir.menon27@example.com,Ahmedabad,Gujarat,68,Female,2025-08-30,web
+CUST00028,Kavya Bhat,kavya.bhat28@example.com,Indore,Madhya Pradesh,65,Female,2024-05-08,web
+CUST00029,Priya Kaur,priya.kaur29@example.com,Chandigarh,Punjab,45,Female,2024-02-13,app
+CUST00030,Arjun Agrawal,arjun.agrawal30@example.com,Hyderabad,Telangana,43,Male,2025-11-14,web
+CUST00031,Arjun Kapoor,arjun.kapoor31@example.com,Indore,Madhya Pradesh,58,Male,2025-08-25,web
+CUST00032,Kavya Agrawal,kavya.agrawal32@example.com,Indore,Madhya Pradesh,69,Female,2024-08-08,web
+CUST00033,Sara Iyer,sara.iyer33@example.com,Bengaluru,Karnataka,51,Male,2025-04-09,phone
+CUST00034,Saanvi Gupta,saanvi.gupta34@example.com,Ahmedabad,Gujarat,37,Female,2026-01-23,store
+CUST00035,Ishita Kapoor,ishita.kapoor35@example.com,Chennai,Tamil Nadu,26,Female,2025-12-02,web
+CUST00036,Kavya Verma,kavya.verma36@example.com,Chennai,Tamil Nadu,57,Male,2025-03-23,phone
+CUST00037,Sara Reddy,sara.reddy37@example.com,Hyderabad,Telangana,50,Male,2024-11-28,web
+CUST00038,Diya Kapoor,diya.kapoor38@example.com,Hyderabad,Telangana,63,Female,2025-05-18,web
+CUST00039,Diya Menon,diya.menon39@example.com,Delhi,Delhi,27,Male,2026-07-21,phone
+CUST00040,Priya Kapoor,priya.kapoor40@example.com,Gurugram,Haryana,19,Female,2025-07-21,phone
+CUST00041,Vikram Gupta,vikram.gupta41@example.com,Ahmedabad,Gujarat,64,Male,2024-11-13,phone
+CUST00042,Ishita Kaur,ishita.kaur42@example.com,Ahmedabad,Gujarat,20,Female,2025-11-01,web
+CUST00043,Anjali Malhotra,anjali.malhotra43@example.com,Delhi,Delhi,61,Male,2025-07-12,web
+CUST00044,Saanvi Iyer,saanvi.iyer44@example.com,Indore,Madhya Pradesh,40,Male,2025-08-31,web
+CUST00045,Ishita Patel,ishita.patel45@example.com,Guwahati,Assam,62,Female,2025-02-19,phone
+CUST00046,Anjali Malhotra,anjali.malhotra46@example.com,Kolkata,West Bengal,21,Male,2026-03-01,web
+CUST00047,Aryan Das,aryan.das47@example.com,Bhubaneswar,Odisha,40,Female,2026-08-16,web
+CUST00048,Ishita Gupta,ishita.gupta48@example.com,Pune,Maharashtra,61,Male,2023-11-12,web
+CUST00049,Rohan Bhat,rohan.bhat49@example.com,Bhubaneswar,Odisha,52,Male,2025-06-02,web
+CUST00050,Aryan Mehta,aryan.mehta50@example.com,Mumbai,Maharashtra,35,Male,2026-07-30,app
+CUST00051,Priya Chopra,priya.chopra51@example.com,Gurugram,Haryana,70,Female,2025-11-19,web
+CUST00052,Kabir Patel,kabir.patel52@example.com,Delhi,Delhi,22,Female,2026-04-02,web
+CUST00053,Aryan Kapoor,aryan.kapoor53@example.com,Indore,Madhya Pradesh,62,Male,2024-09-01,app
+CUST00054,Advait Singh,advait.singh54@example.com,Bhubaneswar,Odisha,61,Male,2025-06-12,web
+CUST00055,Nikhil Menon,nikhil.menon55@example.com,Lucknow,Uttar Pradesh,33,Female,2024-10-04,store
+CUST00056,Rahul Sharma,rahul.sharma56@example.com,Ahmedabad,Gujarat,23,Male,2025-07-18,web
+CUST00057,Aarav Kapoor,aarav.kapoor57@example.com,Hyderabad,Telangana,65,Female,2025-04-27,phone
+CUST00058,Sara Kapoor,sara.kapoor58@example.com,Guwahati,Assam,40,Female,2025-06-11,app
+CUST00059,Aryan Iyer,aryan.iyer59@example.com,Chennai,Tamil Nadu,71,Male,2025-06-28,web
+CUST00060,Aryan Joshi,aryan.joshi60@example.com,Guwahati,Assam,52,Male,2025-04-30,web
+CUST00061,Vikram Mehta,vikram.mehta61@example.com,Jaipur,Rajasthan,35,Male,2025-07-18,web
+CUST00062,Rahul Chopra,rahul.chopra62@example.com,Jaipur,Rajasthan,67,Female,2024-10-19,app
+CUST00063,Saanvi Mehta,saanvi.mehta63@example.com,Lucknow,Uttar Pradesh,61,Female,2025-06-05,app
+CUST00064,Nikhil Patel,nikhil.patel64@example.com,Mumbai,Maharashtra,37,Other,2025-10-26,store
+CUST00065,Nikhil Gupta,nikhil.gupta65@example.com,Pune,Maharashtra,22,Female,2026-07-01,web
+CUST00066,Ananya Malhotra,ananya.malhotra66@example.com,Kochi,Kerala,69,Male,2025-07-12,web
+CUST00067,Rohan Bhat,rohan.bhat67@example.com,Jaipur,Rajasthan,25,Male,2024-07-24,app
+CUST00068,Saanvi Gupta,saanvi.gupta68@example.com,Lucknow,Uttar Pradesh,36,Female,2025-06-06,web
+CUST00069,Kabir Mehta,kabir.mehta69@example.com,Mumbai,Maharashtra,18,Male,2026-06-01,phone
+CUST00070,Diya Verma,diya.verma70@example.com,Jaipur,Rajasthan,41,Female,2026-01-29,web
+CUST00071,Ishita Kapoor,ishita.kapoor71@example.com,Delhi,Delhi,43,Male,2024-01-28,phone
+CUST00072,Vivaan Malhotra,vivaan.malhotra72@example.com,Jaipur,Rajasthan,24,Female,2025-02-22,phone
+CUST00073,Vivaan Gupta,vivaan.gupta73@example.com,Guwahati,Assam,48,Male,2025-05-23,web
+CUST00074,Diya Bhat,diya.bhat74@example.com,Gurugram,Haryana,39,Female,2025-09-09,app
+CUST00075,Aryan Kaur,aryan.kaur75@example.com,Chennai,Tamil Nadu,70,Female,2025-07-22,app
+CUST00076,Kavya Sharma,kavya.sharma76@example.com,Chandigarh,Punjab,40,Male,2025-06-21,app
+CUST00077,Vikram Kaur,vikram.kaur77@example.com,Chandigarh,Punjab,59,Female,2025-09-03,web
+CUST00078,Meera Agrawal,meera.agrawal78@example.com,Pune,Maharashtra,40,Male,2025-10-28,web
+CUST00079,Aditya Chopra,aditya.chopra79@example.com,Ahmedabad,Gujarat,69,Male,2025-08-25,phone
+CUST00080,Kabir Verma,kabir.verma80@example.com,Chandigarh,Punjab,19,Female,2026-07-14,store
+CUST00081,Advait Joshi,advait.joshi81@example.com,Kochi,Kerala,28,Female,2026-08-27,app
+CUST00082,Vivaan Bhat,vivaan.bhat82@example.com,Bhubaneswar,Odisha,47,Female,2026-01-15,web
+CUST00083,Aarav Malhotra,aarav.malhotra83@example.com,Mumbai,Maharashtra,18,Female,2026-06-20,app
+CUST00084,Kavya Kumar,kavya.kumar84@example.com,Gurugram,Haryana,70,Male,2026-07-12,app
+CUST00085,Ishita Nair,ishita.nair85@example.com,Lucknow,Uttar Pradesh,69,Female,2025-06-21,store
+CUST00086,Aryan Iyer,aryan.iyer86@example.com,Chennai,Tamil Nadu,34,Male,2024-10-09,web
+CUST00087,Priya Joshi,priya.joshi87@example.com,Hyderabad,Telangana,27,Male,2026-08-27,store
+CUST00088,Saanvi Verma,saanvi.verma88@example.com,Chennai,Tamil Nadu,67,Male,2026-07-14,web
+CUST00089,Priya Das,priya.das89@example.com,Kochi,Kerala,52,Female,2025-01-13,web
+CUST00090,Arjun Nair,arjun.nair90@example.com,Gurugram,Haryana,28,Male,2026-05-30,app
+CUST00091,Saanvi Malhotra,saanvi.malhotra91@example.com,Ahmedabad,Gujarat,69,Male,2025-11-21,web
+CUST00092,Vivaan Reddy,vivaan.reddy92@example.com,Mumbai,Maharashtra,34,Male,2024-06-17,web
+CUST00093,Vikram Patel,vikram.patel93@example.com,Kolkata,West Bengal,40,Female,2025-07-03,phone
+CUST00094,Advait Malhotra,advait.malhotra94@example.com,Ahmedabad,Gujarat,22,Male,2025-07-10,web
+CUST00095,Kavya Agrawal,kavya.agrawal95@example.com,Bhubaneswar,Odisha,25,Male,2026-01-31,web
+CUST00096,Saanvi Bhat,saanvi.bhat96@example.com,Bhubaneswar,Odisha,39,Female,2024-06-27,store
+CUST00097,Ishita Reddy,ishita.reddy97@example.com,Kolkata,West Bengal,70,Female,2026-07-06,web
+CUST00098,Aryan Das,aryan.das98@example.com,Delhi,Delhi,67,Female,2025-09-04,phone
+CUST00099,Kavya Nair,kavya.nair99@example.com,Lucknow,Uttar Pradesh,62,Male,2025-02-04,web
+CUST00100,Aditya Bhat,aditya.bhat100@example.com,Chandigarh,Punjab,71,Female,2026-06-05,app
+CUST00101,Meera Iyer,meera.iyer101@example.com,Kolkata,West Bengal,21,Other,2024-01-27,web
+CUST00102,Saanvi Bhat,saanvi.bhat102@example.com,Chandigarh,Punjab,53,Male,2025-04-04,web
+CUST00103,Aditya Verma,aditya.verma103@example.com,Ahmedabad,Gujarat,23,Male,2025-10-09,app
+CUST00104,Vivaan Kapoor,vivaan.kapoor104@example.com,Delhi,Delhi,35,Male,2024-11-05,app
+CUST00105,Advait Malhotra,advait.malhotra105@example.com,Gurugram,Haryana,26,Female,2025-04-07,app
+CUST00106,Arjun Gupta,arjun.gupta106@example.com,Mumbai,Maharashtra,28,Male,2025-10-04,store
+CUST00107,Aryan Joshi,aryan.joshi107@example.com,Delhi,Delhi,26,Female,2024-08-05,web
+CUST00108,Aryan Kaur,aryan.kaur108@example.com,Chandigarh,Punjab,58,Female,2024-11-05,web
+CUST00109,Diya Kaur,diya.kaur109@example.com,Gurugram,Haryana,43,Male,2026-01-08,phone
+CUST00110,Vikram Iyer,vikram.iyer110@example.com,Pune,Maharashtra,18,Female,2025-04-14,web
+CUST00111,Meera Singh,meera.singh111@example.com,Hyderabad,Telangana,69,Female,2024-01-19,web
+CUST00112,Rohan Menon,rohan.menon112@example.com,Kolkata,West Bengal,48,Male,2025-06-02,phone
+CUST00113,Sara Mehta,sara.mehta113@example.com,Kochi,Kerala,32,Male,2026-06-09,web
+CUST00114,Advait Malhotra,advait.malhotra114@example.com,Mumbai,Maharashtra,56,Male,2026-01-05,app
+CUST00115,Priya Menon,priya.menon115@example.com,Chennai,Tamil Nadu,33,Male,2025-11-28,web
+CUST00116,Rohan Reddy,rohan.reddy116@example.com,Mumbai,Maharashtra,64,Male,2026-04-24,app
+CUST00117,Meera Menon,meera.menon117@example.com,Kolkata,West Bengal,63,Female,2024-12-01,phone
+CUST00118,Arjun Kapoor,arjun.kapoor118@example.com,Indore,Madhya Pradesh,53,Male,2025-09-02,app
+CUST00119,Vikram Nair,vikram.nair119@example.com,Guwahati,Assam,49,Male,2026-05-27,web
+CUST00120,Ishita Sharma,ishita.sharma120@example.com,Bhubaneswar,Odisha,34,Female,2025-04-15,app
+CUST00121,Vivaan Nair,vivaan.nair121@example.com,Bengaluru,Karnataka,49,Male,2026-03-31,web
+CUST00122,Aditya Iyer,aditya.iyer122@example.com,Kochi,Kerala,39,Female,2026-06-26,web
+CUST00123,Rahul Chopra,rahul.chopra123@example.com,Jaipur,Rajasthan,20,Male,2025-10-09,web
+CUST00124,Nikhil Reddy,nikhil.reddy124@example.com,Kochi,Kerala,72,Female,2025-11-19,app
+CUST00125,Advait Agrawal,advait.agrawal125@example.com,Bengaluru,Karnataka,23,Female,2026-02-26,web
+CUST00126,Nikhil Kapoor,nikhil.kapoor126@example.com,Jaipur,Rajasthan,44,Female,2025-07-31,web
+CUST00127,Vikram Nair,vikram.nair127@example.com,Pune,Maharashtra,62,Female,2023-11-26,web
+CUST00128,Meera Menon,meera.menon128@example.com,Delhi,Delhi,35,Female,2026-07-30,phone
+CUST00129,Nikhil Singh,nikhil.singh129@example.com,Pune,Maharashtra,56,Female,2025-07-09,phone
+CUST00130,Rohan Kapoor,rohan.kapoor130@example.com,Hyderabad,Telangana,66,Female,2026-04-23,app
+CUST00131,Vikram Agrawal,vikram.agrawal131@example.com,Jaipur,Rajasthan,19,Female,2023-10-31,web
+CUST00132,Saanvi Chopra,saanvi.chopra132@example.com,Kochi,Kerala,63,Male,2026-03-04,app
+CUST00133,Anjali Nair,anjali.nair133@example.com,Chandigarh,Punjab,63,Male,2025-04-28,web
+CUST00134,Anjali Kaur,anjali.kaur134@example.com,Delhi,Delhi,44,Male,2025-07-01,web
+CUST00135,Vikram Reddy,vikram.reddy135@example.com,Chennai,Tamil Nadu,38,Female,2026-06-12,app
+CUST00136,Rahul Verma,rahul.verma136@example.com,Hyderabad,Telangana,19,Female,2025-06-01,web
+CUST00137,Sara Nair,sara.nair137@example.com,Hyderabad,Telangana,63,Male,2025-12-31,web
+CUST00138,Meera Nair,meera.nair138@example.com,Hyderabad,Telangana,57,Male,2025-04-30,web
+CUST00139,Kavya Malhotra,kavya.malhotra139@example.com,Lucknow,Uttar Pradesh,57,Male,2025-11-19,web
+CUST00140,Arjun Mehta,arjun.mehta140@example.com,Bengaluru,Karnataka,33,Male,2025-12-07,web
+CUST00141,Diya Kaur,diya.kaur141@example.com,Indore,Madhya Pradesh,59,Male,2026-02-07,web
+CUST00142,Anjali Sharma,anjali.sharma142@example.com,Bengaluru,Karnataka,26,Female,2024-04-10,web
+CUST00143,Priya Menon,priya.menon143@example.com,Chandigarh,Punjab,29,Male,2025-09-30,web
+CUST00144,Kavya Joshi,kavya.joshi144@example.com,Jaipur,Rajasthan,58,Male,2024-04-07,web
+CUST00145,Anjali Kapoor,anjali.kapoor145@example.com,Guwahati,Assam,20,Male,2025-10-16,web
+CUST00146,Diya Nair,diya.nair146@example.com,Guwahati,Assam,57,Female,2026-02-14,web
+CUST00147,Advait Das,advait.das147@example.com,Ahmedabad,Gujarat,64,Female,2025-07-21,app
+CUST00148,Aarav Rao,aarav.rao148@example.com,Kochi,Kerala,38,Female,2026-08-02,web
+CUST00149,Kabir Agrawal,kabir.agrawal149@example.com,Bhubaneswar,Odisha,62,Female,2024-08-07,web
+CUST00150,Vivaan Kaur,vivaan.kaur150@example.com,Bengaluru,Karnataka,58,Female,2026-04-19,phone
+CUST00151,Diya Malhotra,diya.malhotra151@example.com,Bhubaneswar,Odisha,29,Other,2025-06-24,app
+CUST00152,Ananya Sharma,ananya.sharma152@example.com,Guwahati,Assam,62,Female,2024-08-16,web
+CUST00153,Anjali Iyer,anjali.iyer153@example.com,Delhi,Delhi,66,Male,2026-08-23,web
+CUST00154,Rohan Sharma,rohan.sharma154@example.com,Indore,Madhya Pradesh,29,Female,2026-02-26,web
+CUST00155,Ishita Das,ishita.das155@example.com,Lucknow,Uttar Pradesh,65,Male,2026-06-02,web
+CUST00156,Nikhil Patel,nikhil.patel156@example.com,Chandigarh,Punjab,25,Female,2024-08-20,web
+CUST00157,Rohan Bhat,rohan.bhat157@example.com,Indore,Madhya Pradesh,22,Female,2023-11-14,store
+CUST00158,Saanvi Bhat,saanvi.bhat158@example.com,Delhi,Delhi,28,Male,2025-08-07,app
+CUST00159,Kavya Bhat,kavya.bhat159@example.com,Pune,Maharashtra,30,Male,2024-04-09,app
+CUST00160,Nikhil Iyer,nikhil.iyer160@example.com,Jaipur,Rajasthan,71,Female,2026-05-24,web
+CUST00161,Aditya Rao,aditya.rao161@example.com,Guwahati,Assam,59,Male,2024-02-11,store
+CUST00162,Vivaan Patel,vivaan.patel162@example.com,Kochi,Kerala,48,Male,2024-07-09,app
+CUST00163,Aditya Kapoor,aditya.kapoor163@example.com,Kochi,Kerala,49,Male,2024-11-01,app
+CUST00164,Nikhil Patel,nikhil.patel164@example.com,Lucknow,Uttar Pradesh,41,Female,2024-09-09,phone
+CUST00165,Saanvi Patel,saanvi.patel165@example.com,Kolkata,West Bengal,71,Female,2026-04-07,web
+CUST00166,Advait Joshi,advait.joshi166@example.com,Indore,Madhya Pradesh,34,Male,2025-03-09,web
+CUST00167,Kavya Patel,kavya.patel167@example.com,Guwahati,Assam,34,Male,2025-04-06,web
+CUST00168,Saanvi Menon,saanvi.menon168@example.com,Mumbai,Maharashtra,44,Male,2023-09-23,phone
+CUST00169,Kabir Reddy,kabir.reddy169@example.com,Indore,Madhya Pradesh,70,Male,2026-06-30,web
+CUST00170,Advait Sharma,advait.sharma170@example.com,Delhi,Delhi,37,Male,2024-10-04,web
+CUST00171,Advait Gupta,advait.gupta171@example.com,Jaipur,Rajasthan,38,Male,2024-09-02,app
+CUST00172,Rahul Rao,rahul.rao172@example.com,Guwahati,Assam,60,Male,2026-03-31,store
+CUST00173,Kavya Menon,kavya.menon173@example.com,Pune,Maharashtra,34,Male,2026-06-06,phone
+CUST00174,Nikhil Kapoor,nikhil.kapoor174@example.com,Guwahati,Assam,62,Female,2023-11-08,store
+CUST00175,Kavya Malhotra,kavya.malhotra175@example.com,Kochi,Kerala,70,Male,2026-04-19,web
+CUST00176,Priya Bhat,priya.bhat176@example.com,Lucknow,Uttar Pradesh,29,Male,2024-03-08,web
+CUST00177,Arjun Kapoor,arjun.kapoor177@example.com,Delhi,Delhi,56,Female,2026-03-29,app
+CUST00178,Aditya Bhat,aditya.bhat178@example.com,Gurugram,Haryana,42,Female,2026-05-31,web
+CUST00179,Advait Joshi,advait.joshi179@example.com,Ahmedabad,Gujarat,47,Female,2024-06-08,web
+CUST00180,Anjali Gupta,anjali.gupta180@example.com,Jaipur,Rajasthan,60,Female,2026-01-31,web
+CUST00181,Aarav Menon,aarav.menon181@example.com,Mumbai,Maharashtra,47,Male,2025-11-23,app
+CUST00182,Ishita Malhotra,ishita.malhotra182@example.com,Mumbai,Maharashtra,58,Female,2026-01-17,web
+CUST00183,Vivaan Malhotra,vivaan.malhotra183@example.com,Lucknow,Uttar Pradesh,57,Male,2024-07-09,app
+CUST00184,Aarav Chopra,aarav.chopra184@example.com,Gurugram,Haryana,51,Male,2025-10-04,app
+CUST00185,Saanvi Bhat,saanvi.bhat185@example.com,Lucknow,Uttar Pradesh,57,Male,2026-07-14,store
+CUST00186,Sara Mehta,sara.mehta186@example.com,Ahmedabad,Gujarat,37,Male,2024-11-03,app
+CUST00187,Aditya Mehta,aditya.mehta187@example.com,Mumbai,Maharashtra,31,Male,2023-11-13,web
+CUST00188,Kavya Reddy,kavya.reddy188@example.com,Mumbai,Maharashtra,40,Male,2025-12-09,store
+CUST00189,Meera Malhotra,meera.malhotra189@example.com,Delhi,Delhi,70,Female,2024-11-25,web
+CUST00190,Ananya Kumar,ananya.kumar190@example.com,Bengaluru,Karnataka,64,Female,2026-06-17,store
+CUST00191,Vivaan Kapoor,vivaan.kapoor191@example.com,Kochi,Kerala,61,Male,2025-10-08,web
+CUST00192,Rohan Kapoor,rohan.kapoor192@example.com,Kolkata,West Bengal,45,Male,2026-03-27,web
+CUST00193,Aditya Reddy,aditya.reddy193@example.com,Kolkata,West Bengal,71,Male,2026-06-27,app
+CUST00194,Ananya Verma,ananya.verma194@example.com,Pune,Maharashtra,50,Male,2025-09-15,app
+CUST00195,Kabir Chopra,kabir.chopra195@example.com,Pune,Maharashtra,67,Female,2025-07-21,web
+CUST00196,Ishita Agrawal,ishita.agrawal196@example.com,Bhubaneswar,Odisha,19,Female,2026-02-08,web
+CUST00197,Vikram Agrawal,vikram.agrawal197@example.com,Delhi,Delhi,27,Male,2025-06-02,web
+CUST00198,Kabir Agrawal,kabir.agrawal198@example.com,Gurugram,Haryana,45,Male,2024-08-08,app
+CUST00199,Saanvi Patel,saanvi.patel199@example.com,Bengaluru,Karnataka,46,Male,2025-12-07,web
+CUST00200,Anjali Sharma,anjali.sharma200@example.com,Chandigarh,Punjab,27,Female,2025-10-02,phone
+CUST00201,Vivaan Kaur,vivaan.kaur201@example.com,Chennai,Tamil Nadu,42,Male,2025-06-25,web
+CUST00202,Anjali Patel,anjali.patel202@example.com,Lucknow,Uttar Pradesh,18,Female,2025-09-05,web
+CUST00203,Sara Kapoor,sara.kapoor203@example.com,Hyderabad,Telangana,50,Male,2026-08-20,web
+CUST00204,Ishita Menon,ishita.menon204@example.com,Indore,Madhya Pradesh,26,Male,2026-07-15,web
+CUST00205,Aditya Mehta,aditya.mehta205@example.com,Lucknow,Uttar Pradesh,66,Female,2025-07-26,web
+CUST00206,Rohan Sharma,rohan.sharma206@example.com,Chandigarh,Punjab,31,Male,2026-04-12,web
+CUST00207,Aditya Mehta,aditya.mehta207@example.com,Guwahati,Assam,24,Female,2024-03-03,web
+CUST00208,Kabir Sharma,kabir.sharma208@example.com,Mumbai,Maharashtra,65,Female,2026-06-24,web
+CUST00209,Vivaan Singh,vivaan.singh209@example.com,Kolkata,West Bengal,39,Female,2026-02-03,app
+CUST00210,Kabir Joshi,kabir.joshi210@example.com,Kolkata,West Bengal,64,Male,2025-12-04,web
+CUST00211,Advait Gupta,advait.gupta211@example.com,Jaipur,Rajasthan,28,Female,2025-06-13,web
+CUST00212,Nikhil Kumar,nikhil.kumar212@example.com,Kolkata,West Bengal,49,Female,2024-04-20,app
+CUST00213,Kavya Agrawal,kavya.agrawal213@example.com,Hyderabad,Telangana,65,Female,2025-09-23,web
+CUST00214,Priya Kaur,priya.kaur214@example.com,Mumbai,Maharashtra,48,Female,2025-04-20,phone
+CUST00215,Arjun Mehta,arjun.mehta215@example.com,Bengaluru,Karnataka,46,Other,2026-07-02,web
+CUST00216,Rohan Kapoor,rohan.kapoor216@example.com,Mumbai,Maharashtra,34,Female,2024-09-22,web
+CUST00217,Vikram Kapoor,vikram.kapoor217@example.com,Delhi,Delhi,72,Male,2023-12-07,web
+CUST00218,Priya Malhotra,priya.malhotra218@example.com,Chennai,Tamil Nadu,26,Other,2025-06-09,web
+CUST00219,Ishita Reddy,ishita.reddy219@example.com,Hyderabad,Telangana,46,Male,2025-08-24,web
+CUST00220,Diya Reddy,diya.reddy220@example.com,Delhi,Delhi,28,Female,2026-07-08,phone
+CUST00221,Vikram Mehta,vikram.mehta221@example.com,Gurugram,Haryana,20,Female,2025-06-30,app
+CUST00222,Nikhil Nair,nikhil.nair222@example.com,Jaipur,Rajasthan,35,Female,2026-07-27,app
+CUST00223,Vikram Singh,vikram.singh223@example.com,Mumbai,Maharashtra,61,Male,2025-01-30,app
+CUST00224,Rohan Joshi,rohan.joshi224@example.com,Hyderabad,Telangana,69,Female,2025-11-14,app
+CUST00225,Rohan Kapoor,rohan.kapoor225@example.com,Delhi,Delhi,69,Female,2024-07-17,web
+CUST00226,Nikhil Joshi,nikhil.joshi226@example.com,Jaipur,Rajasthan,72,Female,2025-08-21,web
+CUST00227,Kabir Joshi,kabir.joshi227@example.com,Gurugram,Haryana,28,Female,2025-02-04,app
+CUST00228,Saanvi Singh,saanvi.singh228@example.com,Hyderabad,Telangana,48,Female,2025-05-30,web
+CUST00229,Vivaan Joshi,vivaan.joshi229@example.com,Guwahati,Assam,35,Male,2026-07-28,web
+CUST00230,Ishita Rao,ishita.rao230@example.com,Chandigarh,Punjab,34,Male,2025-06-30,web
+CUST00231,Vikram Reddy,vikram.reddy231@example.com,Ahmedabad,Gujarat,46,Male,2026-03-21,web
+CUST00232,Priya Kaur,priya.kaur232@example.com,Indore,Madhya Pradesh,54,Male,2024-05-31,web
+CUST00233,Priya Reddy,priya.reddy233@example.com,Pune,Maharashtra,36,Male,2025-07-29,web
+CUST00234,Nikhil Joshi,nikhil.joshi234@example.com,Chennai,Tamil Nadu,27,Male,2024-07-30,app
+CUST00235,Ananya Kapoor,ananya.kapoor235@example.com,Ahmedabad,Gujarat,68,Male,2025-04-09,app
+CUST00236,Kabir Patel,kabir.patel236@example.com,Kochi,Kerala,25,Female,2025-10-01,app
+CUST00237,Nikhil Kapoor,nikhil.kapoor237@example.com,Guwahati,Assam,27,Male,2025-07-06,web
+CUST00238,Anjali Joshi,anjali.joshi238@example.com,Jaipur,Rajasthan,28,Male,2024-08-26,web
+CUST00239,Ananya Reddy,ananya.reddy239@example.com,Bhubaneswar,Odisha,72,Other,2025-04-06,web
+CUST00240,Priya Das,priya.das240@example.com,Hyderabad,Telangana,39,Male,2026-08-09,web
+CUST00241,Advait Patel,advait.patel241@example.com,Kochi,Kerala,61,Male,2025-04-06,phone
+CUST00242,Saanvi Rao,saanvi.rao242@example.com,Kochi,Kerala,48,Male,2026-08-08,phone
+CUST00243,Aarav Nair,aarav.nair243@example.com,Chandigarh,Punjab,38,Female,2025-07-27,web
+CUST00244,Vivaan Patel,vivaan.patel244@example.com,Hyderabad,Telangana,52,Female,2024-12-26,web
+CUST00245,Advait Chopra,advait.chopra245@example.com,Hyderabad,Telangana,52,Male,2025-01-15,web
+CUST00246,Kabir Singh,kabir.singh246@example.com,Chennai,Tamil Nadu,64,Male,2024-02-08,store
+CUST00247,Nikhil Gupta,nikhil.gupta247@example.com,Mumbai,Maharashtra,44,Male,2025-11-29,web
+CUST00248,Aditya Kapoor,aditya.kapoor248@example.com,Delhi,Delhi,56,Other,2024-04-12,phone
+CUST00249,Aditya Sharma,aditya.sharma249@example.com,Chandigarh,Punjab,31,Male,2026-03-03,app
+CUST00250,Kavya Rao,kavya.rao250@example.com,Mumbai,Maharashtra,52,Male,2025-12-08,web
+CUST00251,Saanvi Kaur,saanvi.kaur251@example.com,Jaipur,Rajasthan,28,Female,2025-01-13,web
+CUST00252,Vikram Joshi,vikram.joshi252@example.com,Bhubaneswar,Odisha,35,Male,2025-12-08,web
+CUST00253,Rohan Kumar,rohan.kumar253@example.com,Bhubaneswar,Odisha,34,Male,2026-01-29,web
+CUST00254,Kavya Kumar,kavya.kumar254@example.com,Delhi,Delhi,64,Male,2024-07-08,app
+CUST00255,Aarav Malhotra,aarav.malhotra255@example.com,Hyderabad,Telangana,27,Female,2025-03-29,web
+CUST00256,Diya Kumar,diya.kumar256@example.com,Ahmedabad,Gujarat,23,Male,2025-01-25,web
+CUST00257,Arjun Agrawal,arjun.agrawal257@example.com,Hyderabad,Telangana,25,Male,2025-11-12,store
+CUST00258,Advait Malhotra,advait.malhotra258@example.com,Kolkata,West Bengal,49,Male,2026-06-25,phone
+CUST00259,Arjun Chopra,arjun.chopra259@example.com,Mumbai,Maharashtra,37,Male,2024-09-15,web
+CUST00260,Ananya Joshi,ananya.joshi260@example.com,Bengaluru,Karnataka,21,Male,2026-04-25,web
+CUST00261,Meera Sharma,meera.sharma261@example.com,Guwahati,Assam,39,Male,2025-05-11,web
+CUST00262,Aditya Verma,aditya.verma262@example.com,Delhi,Delhi,45,Male,2025-06-22,app
+CUST00263,Diya Singh,diya.singh263@example.com,Jaipur,Rajasthan,43,Female,2026-02-13,web
+CUST00264,Meera Iyer,meera.iyer264@example.com,Chandigarh,Punjab,47,Male,2025-09-03,web
+CUST00265,Diya Chopra,diya.chopra265@example.com,Chandigarh,Punjab,49,Male,2026-03-16,web
+CUST00266,Aryan Verma,aryan.verma266@example.com,Gurugram,Haryana,50,Female,2024-05-20,web
+CUST00267,Saanvi Das,saanvi.das267@example.com,Gurugram,Haryana,36,Female,2025-07-13,web
+CUST00268,Diya Singh,diya.singh268@example.com,Bengaluru,Karnataka,52,Female,2025-10-29,app
+CUST00269,Rahul Gupta,rahul.gupta269@example.com,Kochi,Kerala,41,Male,2024-12-06,web
+CUST00270,Sara Nair,sara.nair270@example.com,Kochi,Kerala,47,Female,2026-03-21,store
+CUST00271,Arjun Malhotra,arjun.malhotra271@example.com,Kochi,Kerala,55,Female,2025-06-25,app
+CUST00272,Kabir Iyer,kabir.iyer272@example.com,Bhubaneswar,Odisha,66,Male,2025-12-17,phone
+CUST00273,Kavya Rao,kavya.rao273@example.com,Ahmedabad,Gujarat,45,Female,2024-04-05,web
+CUST00274,Ishita Mehta,ishita.mehta274@example.com,Chandigarh,Punjab,58,Female,2026-07-29,phone
+CUST00275,Aarav Das,aarav.das275@example.com,Kolkata,West Bengal,63,Male,2025-02-01,app
+CUST00276,Nikhil Reddy,nikhil.reddy276@example.com,Pune,Maharashtra,40,Male,2024-12-18,app
+CUST00277,Nikhil Menon,nikhil.menon277@example.com,Bhubaneswar,Odisha,64,Male,2025-10-31,web
+CUST00278,Kabir Singh,kabir.singh278@example.com,Mumbai,Maharashtra,42,Male,2025-05-30,store
+CUST00279,Aditya Agrawal,aditya.agrawal279@example.com,Ahmedabad,Gujarat,72,Female,2026-05-20,store
+CUST00280,Rahul Mehta,rahul.mehta280@example.com,Indore,Madhya Pradesh,19,Female,2026-08-02,web
+CUST00281,Aditya Mehta,aditya.mehta281@example.com,Bengaluru,Karnataka,23,Male,2025-06-05,app
+CUST00282,Arjun Das,arjun.das282@example.com,Jaipur,Rajasthan,67,Female,2026-02-12,web
+CUST00283,Saanvi Agrawal,saanvi.agrawal283@example.com,Indore,Madhya Pradesh,65,Female,2025-08-18,phone
+CUST00284,Rohan Malhotra,rohan.malhotra284@example.com,Ahmedabad,Gujarat,21,Female,2024-07-21,web
+CUST00285,Advait Bhat,advait.bhat285@example.com,Indore,Madhya Pradesh,23,Male,2026-06-28,web
+CUST00286,Aditya Mehta,aditya.mehta286@example.com,Jaipur,Rajasthan,41,Female,2025-06-14,web
+CUST00287,Rahul Kumar,rahul.kumar287@example.com,Hyderabad,Telangana,20,Female,2026-02-01,app
+CUST00288,Advait Iyer,advait.iyer288@example.com,Bhubaneswar,Odisha,20,Male,2024-11-04,store
+CUST00289,Vivaan Chopra,vivaan.chopra289@example.com,Hyderabad,Telangana,72,Female,2026-07-28,web
+CUST00290,Sara Sharma,sara.sharma290@example.com,Gurugram,Haryana,60,Female,2025-09-09,web
+CUST00291,Aditya Kapoor,aditya.kapoor291@example.com,Gurugram,Haryana,47,Male,2026-01-27,app
+CUST00292,Ananya Rao,ananya.rao292@example.com,Kolkata,West Bengal,26,Male,2025-02-18,web
+CUST00293,Aditya Bhat,aditya.bhat293@example.com,Chandigarh,Punjab,48,Female,2025-08-05,web
+CUST00294,Ananya Kapoor,ananya.kapoor294@example.com,Ahmedabad,Gujarat,37,Female,2024-09-06,phone
+CUST00295,Ishita Malhotra,ishita.malhotra295@example.com,Indore,Madhya Pradesh,66,Female,2024-05-13,app
+CUST00296,Nikhil Kumar,nikhil.kumar296@example.com,Lucknow,Uttar Pradesh,69,Female,2024-03-06,app
+CUST00297,Ishita Joshi,ishita.joshi297@example.com,Jaipur,Rajasthan,47,Female,2026-02-02,web
+CUST00298,Aarav Mehta,aarav.mehta298@example.com,Lucknow,Uttar Pradesh,19,Male,2026-07-13,web
+CUST00299,Meera Bhat,meera.bhat299@example.com,Kochi,Kerala,71,Other,2025-07-21,store
+CUST00300,Priya Joshi,priya.joshi300@example.com,Hyderabad,Telangana,58,Other,2025-06-01,web
+CUST00301,Meera Sharma,meera.sharma301@example.com,Lucknow,Uttar Pradesh,60,Male,2025-06-05,app
+CUST00302,Diya Bhat,diya.bhat302@example.com,Guwahati,Assam,30,Male,2025-07-12,app
+CUST00303,Kabir Iyer,kabir.iyer303@example.com,Bhubaneswar,Odisha,69,Other,2025-03-06,app
+CUST00304,Vivaan Menon,vivaan.menon304@example.com,Gurugram,Haryana,35,Female,2024-03-22,app
+CUST00305,Ishita Singh,ishita.singh305@example.com,Delhi,Delhi,52,Male,2025-08-05,web
+CUST00306,Aarav Kumar,aarav.kumar306@example.com,Bhubaneswar,Odisha,29,Female,2024-02-25,web
+CUST00307,Kabir Kapoor,kabir.kapoor307@example.com,Bhubaneswar,Odisha,70,Female,2025-09-18,app
+CUST00308,Aditya Das,aditya.das308@example.com,Ahmedabad,Gujarat,71,Male,2026-05-31,app
+CUST00309,Aryan Reddy,aryan.reddy309@example.com,Bengaluru,Karnataka,23,Female,2025-06-04,store
+CUST00310,Anjali Rao,anjali.rao310@example.com,Indore,Madhya Pradesh,32,Male,2025-01-13,web
+CUST00311,Saanvi Kapoor,saanvi.kapoor311@example.com,Bengaluru,Karnataka,28,Female,2025-09-21,web
+CUST00312,Kavya Patel,kavya.patel312@example.com,Mumbai,Maharashtra,30,Male,2023-08-18,web
+CUST00313,Anjali Joshi,anjali.joshi313@example.com,Bhubaneswar,Odisha,26,Female,2025-12-16,app
+CUST00314,Aryan Chopra,aryan.chopra314@example.com,Jaipur,Rajasthan,50,Male,2025-08-18,app
+CUST00315,Aditya Singh,aditya.singh315@example.com,Ahmedabad,Gujarat,63,Other,2026-02-24,web
+CUST00316,Aarav Patel,aarav.patel316@example.com,Pune,Maharashtra,67,Female,2025-10-12,app
+CUST00317,Priya Joshi,priya.joshi317@example.com,Lucknow,Uttar Pradesh,26,Other,2026-05-02,web
+CUST00318,Vivaan Das,vivaan.das318@example.com,Bengaluru,Karnataka,66,Male,2026-06-01,store
+CUST00319,Aditya Agrawal,aditya.agrawal319@example.com,Indore,Madhya Pradesh,27,Female,2025-06-27,web
+CUST00320,Kabir Chopra,kabir.chopra320@example.com,Guwahati,Assam,57,Male,2025-07-29,app
+CUST00321,Nikhil Verma,nikhil.verma321@example.com,Kochi,Kerala,64,Female,2024-01-26,store
+CUST00322,Priya Kaur,priya.kaur322@example.com,Chennai,Tamil Nadu,63,Female,2024-09-27,web
+CUST00323,Kabir Singh,kabir.singh323@example.com,Pune,Maharashtra,36,Male,2026-07-18,web
+CUST00324,Rahul Kumar,rahul.kumar324@example.com,Jaipur,Rajasthan,33,Male,2025-11-10,store
+CUST00325,Kavya Kaur,kavya.kaur325@example.com,Delhi,Delhi,28,Male,2026-07-04,web
+CUST00326,Aarav Kaur,aarav.kaur326@example.com,Jaipur,Rajasthan,31,Male,2023-12-06,phone
+CUST00327,Kavya Reddy,kavya.reddy327@example.com,Indore,Madhya Pradesh,41,Female,2025-08-01,web
+CUST00328,Aryan Patel,aryan.patel328@example.com,Indore,Madhya Pradesh,30,Male,2024-07-03,web
+CUST00329,Arjun Mehta,arjun.mehta329@example.com,Indore,Madhya Pradesh,25,Male,2024-04-26,web
+CUST00330,Kabir Das,kabir.das330@example.com,Bengaluru,Karnataka,46,Female,2025-08-07,app
+CUST00331,Aryan Das,aryan.das331@example.com,Bhubaneswar,Odisha,27,Male,2024-07-22,web
+CUST00332,Ananya Das,ananya.das332@example.com,Kolkata,West Bengal,26,Male,2024-10-24,store
+CUST00333,Ananya Reddy,ananya.reddy333@example.com,Indore,Madhya Pradesh,38,Other,2025-01-25,phone
+CUST00334,Saanvi Kaur,saanvi.kaur334@example.com,Mumbai,Maharashtra,39,Male,2026-04-03,app
+CUST00335,Advait Kaur,advait.kaur335@example.com,Kolkata,West Bengal,61,Female,2025-09-04,web
+CUST00336,Saanvi Agrawal,saanvi.agrawal336@example.com,Bengaluru,Karnataka,56,Female,2024-03-20,app
+CUST00337,Nikhil Chopra,nikhil.chopra337@example.com,Gurugram,Haryana,72,Female,2026-04-12,phone
+CUST00338,Diya Kapoor,diya.kapoor338@example.com,Hyderabad,Telangana,51,Female,2026-01-14,web
+CUST00339,Rahul Agrawal,rahul.agrawal339@example.com,Ahmedabad,Gujarat,41,Other,2025-07-02,web
+CUST00340,Anjali Kaur,anjali.kaur340@example.com,Pune,Maharashtra,48,Male,2025-11-18,web
+CUST00341,Saanvi Malhotra,saanvi.malhotra341@example.com,Jaipur,Rajasthan,69,Other,2025-08-01,web
+CUST00342,Aryan Sharma,aryan.sharma342@example.com,Indore,Madhya Pradesh,38,Female,2026-02-11,web
+CUST00343,Vivaan Singh,vivaan.singh343@example.com,Mumbai,Maharashtra,32,Male,2025-04-05,web
+CUST00344,Priya Agrawal,priya.agrawal344@example.com,Bhubaneswar,Odisha,31,Female,2025-10-28,web
+CUST00345,Vivaan Kapoor,vivaan.kapoor345@example.com,Chennai,Tamil Nadu,52,Female,2026-06-22,app
+CUST00346,Kabir Kapoor,kabir.kapoor346@example.com,Chennai,Tamil Nadu,69,Male,2024-05-22,app
+CUST00347,Vikram Agrawal,vikram.agrawal347@example.com,Guwahati,Assam,49,Male,2025-07-05,phone
+CUST00348,Ishita Kaur,ishita.kaur348@example.com,Bhubaneswar,Odisha,55,Male,2026-01-02,app
+CUST00349,Vivaan Rao,vivaan.rao349@example.com,Chennai,Tamil Nadu,27,Female,2026-07-04,web
+CUST00350,Kavya Reddy,kavya.reddy350@example.com,Pune,Maharashtra,56,Male,2025-03-30,web
+CUST00351,Arjun Nair,arjun.nair351@example.com,Mumbai,Maharashtra,69,Male,2024-05-27,store
+CUST00352,Sara Nair,sara.nair352@example.com,Ahmedabad,Gujarat,22,Female,2026-04-28,web
+CUST00353,Ananya Malhotra,ananya.malhotra353@example.com,Pune,Maharashtra,59,Female,2025-03-06,store
+CUST00354,Meera Kumar,meera.kumar354@example.com,Bengaluru,Karnataka,32,Female,2024-07-23,app
+CUST00355,Ishita Chopra,ishita.chopra355@example.com,Chandigarh,Punjab,64,Female,2026-06-20,web
+CUST00356,Vikram Gupta,vikram.gupta356@example.com,Jaipur,Rajasthan,43,Male,2026-07-07,store
+CUST00357,Advait Das,advait.das357@example.com,Hyderabad,Telangana,25,Male,2024-08-03,web
+CUST00358,Kabir Agrawal,kabir.agrawal358@example.com,Chennai,Tamil Nadu,72,Female,2025-09-01,store
+CUST00359,Nikhil Iyer,nikhil.iyer359@example.com,Guwahati,Assam,22,Male,2025-05-25,app
+CUST00360,Ananya Iyer,ananya.iyer360@example.com,Indore,Madhya Pradesh,33,Male,2026-06-22,store
+CUST00361,Arjun Chopra,arjun.chopra361@example.com,Mumbai,Maharashtra,43,Female,2026-06-30,app
+CUST00362,Meera Joshi,meera.joshi362@example.com,Indore,Madhya Pradesh,49,Female,2025-05-27,app
+CUST00363,Vikram Rao,vikram.rao363@example.com,Bengaluru,Karnataka,20,Male,2025-03-06,app
+CUST00364,Meera Nair,meera.nair364@example.com,Bhubaneswar,Odisha,42,Male,2024-05-30,web
+CUST00365,Meera Malhotra,meera.malhotra365@example.com,Delhi,Delhi,28,Female,2026-04-18,web
+CUST00366,Meera Agrawal,meera.agrawal366@example.com,Guwahati,Assam,38,Female,2025-03-17,app
+CUST00367,Kabir Singh,kabir.singh367@example.com,Pune,Maharashtra,62,Male,2025-03-29,phone
+CUST00368,Saanvi Iyer,saanvi.iyer368@example.com,Chennai,Tamil Nadu,24,Female,2026-02-07,store
+CUST00369,Vivaan Nair,vivaan.nair369@example.com,Chennai,Tamil Nadu,70,Male,2025-10-11,app
+CUST00370,Ishita Malhotra,ishita.malhotra370@example.com,Lucknow,Uttar Pradesh,30,Female,2025-07-13,web
+CUST00371,Saanvi Chopra,saanvi.chopra371@example.com,Indore,Madhya Pradesh,63,Male,2024-11-18,app
+CUST00372,Meera Patel,meera.patel372@example.com,Guwahati,Assam,18,Female,2025-10-08,web
+CUST00373,Sara Kumar,sara.kumar373@example.com,Chandigarh,Punjab,57,Female,2025-08-02,phone
+CUST00374,Meera Rao,meera.rao374@example.com,Bhubaneswar,Odisha,60,Female,2025-09-02,store
+CUST00375,Meera Mehta,meera.mehta375@example.com,Bengaluru,Karnataka,19,Female,2025-10-30,phone
+CUST00376,Aryan Patel,aryan.patel376@example.com,Chennai,Tamil Nadu,59,Male,2024-03-16,web
+CUST00377,Arjun Mehta,arjun.mehta377@example.com,Lucknow,Uttar Pradesh,27,Female,2026-03-29,web
+CUST00378,Diya Iyer,diya.iyer378@example.com,Bengaluru,Karnataka,62,Male,2025-02-26,app
+CUST00379,Saanvi Chopra,saanvi.chopra379@example.com,Mumbai,Maharashtra,53,Male,2025-01-01,app
+CUST00380,Sara Rao,sara.rao380@example.com,Kolkata,West Bengal,44,Male,2024-01-18,phone
+CUST00381,Kavya Patel,kavya.patel381@example.com,Pune,Maharashtra,42,Female,2025-12-16,store
+CUST00382,Priya Sharma,priya.sharma382@example.com,Lucknow,Uttar Pradesh,36,Male,2026-03-27,web
+CUST00383,Priya Malhotra,priya.malhotra383@example.com,Hyderabad,Telangana,72,Female,2024-08-25,web
+CUST00384,Ananya Singh,ananya.singh384@example.com,Bhubaneswar,Odisha,20,Female,2026-04-19,web
+CUST00385,Aarav Malhotra,aarav.malhotra385@example.com,Chennai,Tamil Nadu,39,Female,2026-06-18,app
+CUST00386,Kavya Mehta,kavya.mehta386@example.com,Gurugram,Haryana,58,Female,2025-07-05,app
+CUST00387,Kavya Verma,kavya.verma387@example.com,Lucknow,Uttar Pradesh,20,Female,2026-08-16,app
+CUST00388,Advait Menon,advait.menon388@example.com,Chennai,Tamil Nadu,29,Male,2026-06-08,web
+CUST00389,Kavya Das,kavya.das389@example.com,Kolkata,West Bengal,34,Male,2026-08-02,web
+CUST00390,Aryan Malhotra,aryan.malhotra390@example.com,Hyderabad,Telangana,29,Male,2023-12-06,web
+CUST00391,Ananya Bhat,ananya.bhat391@example.com,Mumbai,Maharashtra,50,Male,2025-07-29,app
+CUST00392,Saanvi Menon,saanvi.menon392@example.com,Delhi,Delhi,19,Male,2026-06-29,web
+CUST00393,Rahul Joshi,rahul.joshi393@example.com,Bengaluru,Karnataka,54,Male,2024-07-02,web
+CUST00394,Advait Verma,advait.verma394@example.com,Delhi,Delhi,72,Male,2026-01-17,web
+CUST00395,Aryan Joshi,aryan.joshi395@example.com,Hyderabad,Telangana,34,Female,2025-06-20,app
+CUST00396,Meera Singh,meera.singh396@example.com,Indore,Madhya Pradesh,43,Male,2026-06-27,web
+CUST00397,Kabir Das,kabir.das397@example.com,Mumbai,Maharashtra,64,Female,2026-07-23,web
+CUST00398,Vivaan Iyer,vivaan.iyer398@example.com,Lucknow,Uttar Pradesh,41,Male,2026-07-17,app
+CUST00399,Kabir Reddy,kabir.reddy399@example.com,Mumbai,Maharashtra,51,Male,2025-03-03,app
+CUST00400,Ishita Malhotra,ishita.malhotra400@example.com,Bengaluru,Karnataka,32,Male,2025-04-12,app
+CUST00401,Aditya Mehta,aditya.mehta401@example.com,Lucknow,Uttar Pradesh,48,Male,2024-06-27,web
+CUST00402,Vikram Patel,vikram.patel402@example.com,Ahmedabad,Gujarat,20,Other,2023-10-29,web
+CUST00403,Aditya Kumar,aditya.kumar403@example.com,Chandigarh,Punjab,27,Female,2024-10-22,web
+CUST00404,Aarav Sharma,aarav.sharma404@example.com,Pune,Maharashtra,43,Female,2025-05-05,web
+CUST00405,Rahul Sharma,rahul.sharma405@example.com,Ahmedabad,Gujarat,49,Female,2026-08-25,app
+CUST00406,Saanvi Bhat,saanvi.bhat406@example.com,Ahmedabad,Gujarat,43,Female,2026-01-22,web
+CUST00407,Meera Agrawal,meera.agrawal407@example.com,Lucknow,Uttar Pradesh,38,Male,2025-08-25,store
+CUST00408,Sara Iyer,sara.iyer408@example.com,Guwahati,Assam,28,Female,2024-09-05,web
+CUST00409,Anjali Menon,anjali.menon409@example.com,Chandigarh,Punjab,52,Female,2026-06-29,app
+CUST00410,Vikram Singh,vikram.singh410@example.com,Delhi,Delhi,64,Female,2025-04-03,web
+CUST00411,Diya Rao,diya.rao411@example.com,Bengaluru,Karnataka,69,Male,2024-07-07,app
+CUST00412,Priya Gupta,priya.gupta412@example.com,Jaipur,Rajasthan,60,Female,2026-06-27,app
+CUST00413,Ananya Kapoor,ananya.kapoor413@example.com,Ahmedabad,Gujarat,65,Female,2025-10-22,web
+CUST00414,Priya Menon,priya.menon414@example.com,Gurugram,Haryana,54,Female,2025-02-15,app
+CUST00415,Ananya Mehta,ananya.mehta415@example.com,Pune,Maharashtra,71,Female,2026-02-14,app
+CUST00416,Arjun Kumar,arjun.kumar416@example.com,Guwahati,Assam,57,Male,2025-12-21,web
+CUST00417,Ishita Joshi,ishita.joshi417@example.com,Delhi,Delhi,35,Female,2024-07-20,app
+CUST00418,Arjun Das,arjun.das418@example.com,Bhubaneswar,Odisha,72,Male,2025-01-07,web
+CUST00419,Ananya Patel,ananya.patel419@example.com,Hyderabad,Telangana,27,Female,2025-09-26,web
+CUST00420,Rohan Iyer,rohan.iyer420@example.com,Bhubaneswar,Odisha,34,Female,2026-04-02,web
+CUST00421,Advait Iyer,advait.iyer421@example.com,Hyderabad,Telangana,68,Male,2025-05-24,web
+CUST00422,Meera Agrawal,meera.agrawal422@example.com,Jaipur,Rajasthan,64,Female,2025-07-05,app
+CUST00423,Aditya Nair,aditya.nair423@example.com,Mumbai,Maharashtra,64,Female,2026-03-08,app
+CUST00424,Kabir Mehta,kabir.mehta424@example.com,Chennai,Tamil Nadu,66,Male,2026-06-28,app
+CUST00425,Aarav Nair,aarav.nair425@example.com,Bengaluru,Karnataka,64,Female,2024-08-30,app
+CUST00426,Advait Gupta,advait.gupta426@example.com,Kochi,Kerala,25,Male,2026-01-31,web
+CUST00427,Nikhil Chopra,nikhil.chopra427@example.com,Bhubaneswar,Odisha,56,Female,2025-07-28,web
+CUST00428,Aarav Nair,aarav.nair428@example.com,Ahmedabad,Gujarat,41,Other,2023-12-11,web
+CUST00429,Vivaan Patel,vivaan.patel429@example.com,Hyderabad,Telangana,24,Male,2023-10-19,app
+CUST00430,Aarav Gupta,aarav.gupta430@example.com,Bhubaneswar,Odisha,45,Female,2026-06-15,web
+CUST00431,Aditya Mehta,aditya.mehta431@example.com,Jaipur,Rajasthan,61,Female,2026-06-26,web
+CUST00432,Sara Sharma,sara.sharma432@example.com,Lucknow,Uttar Pradesh,43,Female,2024-09-05,phone
+CUST00433,Advait Rao,advait.rao433@example.com,Chennai,Tamil Nadu,39,Female,2025-07-01,app
+CUST00434,Meera Kaur,meera.kaur434@example.com,Pune,Maharashtra,37,Male,2025-10-17,web
+CUST00435,Rahul Kaur,rahul.kaur435@example.com,Pune,Maharashtra,31,Female,2023-09-05,phone
+CUST00436,Priya Menon,priya.menon436@example.com,Chennai,Tamil Nadu,60,Female,2025-11-29,web
+CUST00437,Saanvi Kapoor,saanvi.kapoor437@example.com,Bengaluru,Karnataka,21,Female,2025-05-17,store
+CUST00438,Advait Gupta,advait.gupta438@example.com,Bengaluru,Karnataka,56,Male,2025-11-30,web
+CUST00439,Nikhil Nair,nikhil.nair439@example.com,Mumbai,Maharashtra,43,Male,2024-10-16,web
+CUST00440,Kabir Verma,kabir.verma440@example.com,Gurugram,Haryana,29,Male,2025-06-09,web
+CUST00441,Aryan Joshi,aryan.joshi441@example.com,Jaipur,Rajasthan,52,Female,2024-07-08,web
+CUST00442,Meera Kaur,meera.kaur442@example.com,Ahmedabad,Gujarat,37,Female,2024-09-18,store
+CUST00443,Meera Bhat,meera.bhat443@example.com,Jaipur,Rajasthan,52,Male,2025-09-07,web
+CUST00444,Ananya Mehta,ananya.mehta444@example.com,Hyderabad,Telangana,34,Male,2026-05-30,app
+CUST00445,Ananya Kumar,ananya.kumar445@example.com,Bhubaneswar,Odisha,64,Male,2025-03-06,store
+CUST00446,Aarav Joshi,aarav.joshi446@example.com,Bhubaneswar,Odisha,51,Male,2026-07-04,app
+CUST00447,Vikram Singh,vikram.singh447@example.com,Mumbai,Maharashtra,62,Male,2025-10-29,web
+CUST00448,Anjali Bhat,anjali.bhat448@example.com,Mumbai,Maharashtra,41,Female,2025-06-02,app
+CUST00449,Meera Gupta,meera.gupta449@example.com,Ahmedabad,Gujarat,45,Female,2025-08-10,phone
+CUST00450,Saanvi Das,saanvi.das450@example.com,Delhi,Delhi,54,Female,2025-09-26,web
+CUST00451,Kavya Singh,kavya.singh451@example.com,Jaipur,Rajasthan,52,Male,2026-03-07,web
+CUST00452,Kavya Verma,kavya.verma452@example.com,Pune,Maharashtra,20,Female,2025-05-29,web
+CUST00453,Nikhil Bhat,nikhil.bhat453@example.com,Kolkata,West Bengal,48,Male,2024-09-23,web
+CUST00454,Anjali Kumar,anjali.kumar454@example.com,Gurugram,Haryana,36,Male,2025-02-15,web
+CUST00455,Vivaan Bhat,vivaan.bhat455@example.com,Ahmedabad,Gujarat,49,Male,2026-06-29,web
+CUST00456,Ishita Patel,ishita.patel456@example.com,Ahmedabad,Gujarat,62,Female,2026-06-13,web
+CUST00457,Rahul Sharma,rahul.sharma457@example.com,Chennai,Tamil Nadu,38,Male,2026-02-18,phone
+CUST00458,Aditya Gupta,aditya.gupta458@example.com,Chandigarh,Punjab,59,Male,2026-08-28,app
+CUST00459,Ananya Reddy,ananya.reddy459@example.com,Mumbai,Maharashtra,68,Male,2026-07-06,web
+CUST00460,Vivaan Singh,vivaan.singh460@example.com,Indore,Madhya Pradesh,69,Female,2026-01-17,web
+CUST00461,Aditya Kaur,aditya.kaur461@example.com,Chennai,Tamil Nadu,51,Female,2026-08-20,web
+CUST00462,Sara Das,sara.das462@example.com,Hyderabad,Telangana,53,Male,2026-08-07,web
+CUST00463,Saanvi Singh,saanvi.singh463@example.com,Delhi,Delhi,42,Male,2025-09-21,web
+CUST00464,Rahul Sharma,rahul.sharma464@example.com,Kochi,Kerala,30,Male,2026-08-06,web
+CUST00465,Saanvi Mehta,saanvi.mehta465@example.com,Ahmedabad,Gujarat,24,Female,2024-09-22,app
+CUST00466,Rohan Menon,rohan.menon466@example.com,Chandigarh,Punjab,41,Female,2024-10-19,app
+CUST00467,Kabir Iyer,kabir.iyer467@example.com,Kolkata,West Bengal,38,Female,2025-06-29,web
+CUST00468,Aryan Reddy,aryan.reddy468@example.com,Mumbai,Maharashtra,28,Male,2024-05-09,store
+CUST00469,Rahul Kumar,rahul.kumar469@example.com,Kolkata,West Bengal,50,Female,2025-12-22,web
+CUST00470,Nikhil Patel,nikhil.patel470@example.com,Chandigarh,Punjab,21,Male,2025-12-03,web
+CUST00471,Vivaan Sharma,vivaan.sharma471@example.com,Delhi,Delhi,29,Female,2025-03-08,store
+CUST00472,Ishita Menon,ishita.menon472@example.com,Hyderabad,Telangana,28,Female,2025-07-01,web
+CUST00473,Rohan Sharma,rohan.sharma473@example.com,Indore,Madhya Pradesh,58,Female,2025-08-24,app
+CUST00474,Rahul Mehta,rahul.mehta474@example.com,Hyderabad,Telangana,58,Male,2025-06-01,app
+CUST00475,Advait Singh,advait.singh475@example.com,Guwahati,Assam,59,Male,2026-03-22,web
+CUST00476,Rahul Singh,rahul.singh476@example.com,Kochi,Kerala,61,Female,2024-11-25,phone
+CUST00477,Arjun Agrawal,arjun.agrawal477@example.com,Jaipur,Rajasthan,63,Female,2023-09-27,web
+CUST00478,Aditya Singh,aditya.singh478@example.com,Jaipur,Rajasthan,66,Male,2026-07-01,phone
+CUST00479,Rahul Kapoor,rahul.kapoor479@example.com,Kochi,Kerala,26,Male,2026-01-24,store
+CUST00480,Diya Singh,diya.singh480@example.com,Bengaluru,Karnataka,31,Female,2025-09-29,web
+CUST00481,Ananya Gupta,ananya.gupta481@example.com,Delhi,Delhi,36,Female,2023-10-14,web
+CUST00482,Meera Mehta,meera.mehta482@example.com,Kochi,Kerala,48,Male,2025-09-28,store
+CUST00483,Ishita Chopra,ishita.chopra483@example.com,Pune,Maharashtra,24,Female,2026-01-28,app
+CUST00484,Meera Agrawal,meera.agrawal484@example.com,Chandigarh,Punjab,30,Female,2025-05-13,store
+CUST00485,Diya Kapoor,diya.kapoor485@example.com,Hyderabad,Telangana,27,Female,2025-08-09,web
+CUST00486,Vikram Rao,vikram.rao486@example.com,Chennai,Tamil Nadu,42,Female,2025-07-25,web
+CUST00487,Rohan Nair,rohan.nair487@example.com,Bengaluru,Karnataka,41,Male,2025-12-22,app
+CUST00488,Ananya Sharma,ananya.sharma488@example.com,Lucknow,Uttar Pradesh,50,Male,2025-10-10,web
+CUST00489,Diya Malhotra,diya.malhotra489@example.com,Hyderabad,Telangana,66,Female,2024-04-14,web
+CUST00490,Rohan Mehta,rohan.mehta490@example.com,Kolkata,West Bengal,24,Male,2026-07-27,web
+CUST00491,Rahul Mehta,rahul.mehta491@example.com,Mumbai,Maharashtra,57,Female,2025-08-09,store
+CUST00492,Rahul Iyer,rahul.iyer492@example.com,Pune,Maharashtra,38,Male,2026-03-29,app
+CUST00493,Vikram Bhat,vikram.bhat493@example.com,Chennai,Tamil Nadu,46,Female,2025-10-28,web
+CUST00494,Priya Kumar,priya.kumar494@example.com,Lucknow,Uttar Pradesh,56,Male,2026-06-29,web
+CUST00495,Meera Rao,meera.rao495@example.com,Mumbai,Maharashtra,50,Male,2025-05-27,app
+CUST00496,Aarav Mehta,aarav.mehta496@example.com,Delhi,Delhi,40,Male,2025-02-02,store
+CUST00497,Saanvi Malhotra,saanvi.malhotra497@example.com,Delhi,Delhi,57,Male,2025-07-02,app
+CUST00498,Aarav Bhat,aarav.bhat498@example.com,Kolkata,West Bengal,67,Male,2026-06-25,app
+CUST00499,Aarav Reddy,aarav.reddy499@example.com,Guwahati,Assam,59,Female,2024-08-30,web
+CUST00500,Priya Malhotra,priya.malhotra500@example.com,Delhi,Delhi,53,Male,2025-07-15,phone

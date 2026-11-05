@@ -1,0 +1,136 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: customer360_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-customer360}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-db-password}
+      POSTGRES_DB: ${POSTGRES_DB:-customer360}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-customer360}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: customer360_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # One-shot schema migration.
+  #
+  # This has to exist: nothing else in this file runs Alembic, and the backend
+  # image's CMD is plain uvicorn. Without it, `docker compose up` on a fresh
+  # checkout serves an empty database and every request fails with
+  # `relation "users" does not exist` - which looks like an application bug.
+  # It is a separate service rather than an entrypoint step so that backend and
+  # worker cannot race each other running `upgrade head` concurrently.
+  migrate:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+      # Explicit: the Dockerfile's last stage is `prod`, so without this the dev
+      # compose would silently build the production image - gunicorn, no reload,
+      # running as appuser.
+      target: dev
+    container_name: customer360_migrate
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-customer360}:${POSTGRES_PASSWORD:-change-me-db-password}@db:5432/${POSTGRES_DB:-customer360}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+      target: dev
+    container_name: customer360_backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-customer360}:${POSTGRES_PASSWORD:-change-me-db-password}@db:5432/${POSTGRES_DB:-customer360}
+      DATABASE_URL_RO: postgresql+psycopg://${POSTGRES_USER:-customer360}:${POSTGRES_PASSWORD:-change-me-db-password}@db:5432/${POSTGRES_DB:-customer360}
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    volumes:
+      - ./backend:/app
+      - ./ml:/ml
+      - ./data:/data
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+      target: dev
+    container_name: customer360_worker
+    restart: unless-stopped
+    command: celery -A app.tasks.celery_app:celery_app worker --loglevel=info
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-customer360}:${POSTGRES_PASSWORD:-change-me-db-password}@db:5432/${POSTGRES_DB:-customer360}
+      DATABASE_URL_RO: postgresql+psycopg://${POSTGRES_USER:-customer360}:${POSTGRES_PASSWORD:-change-me-db-password}@db:5432/${POSTGRES_DB:-customer360}
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    volumes:
+      - ./backend:/app
+      - ./ml:/ml
+      - ./data:/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    container_name: customer360_frontend
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: http://localhost:8000/api/v1
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
+  redisdata:

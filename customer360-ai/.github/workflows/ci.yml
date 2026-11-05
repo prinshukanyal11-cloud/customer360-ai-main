@@ -1,0 +1,227 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Only the newest run per branch needs to finish.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# Default to read-only; a workflow that needs more must ask for it explicitly.
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    name: Backend lint + tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      # Lints every Python path that ships or runs, not just app/: the tests,
+      # migrations, and scripts are where a broken import hides until deploy.
+      - name: Lint
+        run: ruff check app tests scripts migrations
+
+      - name: Byte-compile (catches syntax errors Ruff's parser would not reach)
+        run: python -m compileall -q app
+
+      # Coverage is reported, not enforced at a number nobody chose deliberately.
+      # The floor guards against silently losing tests; ratchet it, do not lower it.
+      - name: Run backend tests
+        run: |
+          pytest \
+            --cov=app \
+            --cov-report=xml:coverage.xml \
+            --cov-report=term-missing:skip-covered \
+            --cov-fail-under=90
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: backend/coverage.xml
+          if-no-files-found: warn
+
+  migrations:
+    name: Migration drift check
+    runs-on: ubuntu-latest
+    # Runs against real PostgreSQL on purpose: the migrations use SERIAL and
+    # timestamptz, so autogenerating against SQLite reports phantom diffs.
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: ci
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: customer360
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      DATABASE_URL: postgresql+psycopg://ci:ci@localhost:5432/customer360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Apply migrations
+        run: alembic upgrade head
+      # Catches a model edited without its migration - the failure mode that
+      # otherwise appears as a missing column in production only.
+      - name: Verify models match migrations
+        run: alembic check
+      - name: Migrations are downgradable
+        run: |
+          alembic downgrade base
+          alembic upgrade head
+
+  smoke:
+    name: End-to-end smoke
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      # Boots its own server against a throwaway SQLite file, so it needs no
+      # services and still exercises the real app, middleware, and ML pipeline.
+      - name: Run dataset-to-monitoring smoke test
+        run: python scripts/smoke_datasets_e2e.py
+
+  frontend:
+    name: Frontend test + build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      # `npm run build` runs `tsc --noEmit` itself, so a separate type-check step
+      # would only repeat the same work.
+      - name: Lint
+        run: npm run lint
+      - name: Run frontend tests
+        run: npm run test
+      - name: Build frontend
+        run: npm run build
+
+  e2e:
+    name: Browser E2E (Playwright)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      # The Playwright config reads PYTHON; the system interpreter is already on
+      # PATH, so the default applies. Set explicitly anyway so a rename of the
+      # venv cannot silently point the suite at the wrong interpreter.
+      PYTHON: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+      # The suite boots the real API, so it needs the real dependencies. No
+      # database service: it runs on a throwaway SQLite file.
+      - name: Install backend dependencies
+        working-directory: backend
+        run: pip install -r requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install frontend dependencies
+        run: npm ci
+      # Installed via the package so the version matches @playwright/test exactly;
+      # installing "latest" browsers against a pinned runner image is how the
+      # browser and the client drift apart.
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run browser tests
+        run: npm run test:e2e
+      - name: Upload Playwright artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            frontend/playwright-report/
+            frontend/test-results/
+          retention-days: 7
+          if-no-files-found: warn
+
+  security:
+    name: Dependency + secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # gitleaks needs the full history to find a secret that was removed later.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+      - name: Install scanner
+        run: pip install pip-audit
+      # --strict makes any advisory a failure instead of an exit-0 note.
+      - name: Audit Python dependencies
+        run: pip-audit --strict --requirement backend/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Audit npm dependencies
+        working-directory: frontend
+        run: npm audit --audit-level=high
+      - name: Scan repository for committed secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
